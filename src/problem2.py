@@ -20,7 +20,7 @@ def main():
     print('Un-comment the calls in MAIN one by one')
     print(' to run the testing code as you complete the TODOs.')
     run_test_problem2a()
-    # run_test_problem2b()
+    run_test_problem2b()
     # run_test_problem2c()
 
 
@@ -239,6 +239,14 @@ def run_test_problem2b():
     
     
 def problem2b(sequence):
+
+    x = 0
+    for k in range(len(sequence)):
+        if abs(sequence[k]) > x:
+            tot = k
+            x = abs(sequence[k])
+    return tot
+
     """
     What comes in:
       -- An non-empty sequence of integers with no duplicates.
@@ -256,7 +264,7 @@ def problem2b(sequence):
       :type sequence  [int]
     """
     # -------------------------------------------------------------------------
-    # TODO: 3. Implement and test this function.
+    # Done: 3. Implement and test this function.
     #          Tests have been written for you (above).
     # -------------------------------------------------------------------------
 
