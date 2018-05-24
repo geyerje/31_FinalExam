@@ -32,8 +32,29 @@ def run_test_shape():
 
 
 def shape(n):
+    count1 = 2
     for k in range(n):
-        for i in range(n*2 + 2):
+        for i in range(n-k-1):
+            print(' ',end='')
+        for p in range(k+1):
+            if p == 9:
+                print(0, end='')
+            else:
+                print((n%10+1+p%10)- n%10, end='')
+        print(' ', end='')
+        for l in range(count1):
+            print('*', end='')
+        print(' ', end='')
+        for j in range(n-k-1,-1,-1):
+            if j == 9:
+                print(0, end='')
+            else:
+                print(j%10+1, end='')
+        print('')
+        count1 += 1
+
+
+
 
     ####################################################################
     # IMPORTANT: In solving this problem,
@@ -78,7 +99,7 @@ And this one for n=14:
     :type n: int
     """
     # ------------------------------------------------------------------
-    # TODO: Implement and test this function.
+    # Done: Implement and test this function.
     #          Some tests are already written for you (above).
     ####################################################################
     # IMPORTANT: In solving this problem,
