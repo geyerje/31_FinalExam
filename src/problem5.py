@@ -4,7 +4,7 @@ Final exam, problem 5.
 Authors: David Mutchler, Dave Fisher, Matt Boutell, Amanda Stouder,
          their colleagues and PUT_YOUR_NAME_HERE.  May 2018.
 
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+"""  # Done: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 import time
 import testing_helper
@@ -103,6 +103,10 @@ def run_test_problem5():
 
 
 def problem5(m, numbers1, numbers2):
+    for k in range(len(numbers1)):
+        if numbers1[k] * m == numbers2[k]:
+            return [numbers1[k], numbers2[k]]
+    return []
     """
     What comes in:
        -- An integer m

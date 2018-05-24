@@ -3,7 +3,7 @@ Final exam, problem 3.
 
 Authors: David Mutchler, Dave Fisher, Matt Boutell, their colleagues,
          and PUT_YOUR_NAME_HERE.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+"""  # Done: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 
 def main():
@@ -32,6 +32,9 @@ def run_test_shape():
 
 
 def shape(n):
+    for k in range(n):
+        for i in range(n*2 + 2):
+
     ####################################################################
     # IMPORTANT: In solving this problem,
     #   You must NOT use string multiplication.
